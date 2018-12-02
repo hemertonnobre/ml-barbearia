@@ -1,0 +1,214 @@
+  /*#fonte section */
+@font-face {
+    font-family: 'ralewayblack';
+    src: url('../fonts/Raleway-Regular-black-webfont.woff2') format('woff2'),
+         url('../fonts/Raleway-Regular-black-webfont.woff') format('woff');
+    font-weight: normal;
+   	font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayblack_italic';
+    src: url('../fonts/Raleway-Regular-blackitalic-webfont.woff2') format('woff2'),
+         url('../fonts/Raleway-Regular-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+ 	  font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/Raleway-Regular-bold-webfont.woff2') format('woff2'),
+         url('../fonts/Raleway-Regular-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaybold_italic';
+    src: url('../fonts/Raleway-Regular-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/Raleway-Regular-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayextrabold';
+    src: url('../fonts/Raleway-Regular-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/Raleway-Regular-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayextrabold_italic';
+    src: url('../fonts/Raleway-Regular-extrabolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/Raleway-Regular-extrabolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayextralight';
+    src: url('../fonts/Raleway-Regular-extralight-webfont.woff2') format('woff2'),
+         url('../fonts/Raleway-Regular-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayextralight_italic';
+    src: url('../fonts/Raleway-Regular-extralightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/Raleway-Regular-extralightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayitalic';
+    src: url('../fonts/Raleway-Regular-italic-webfont.woff2') format('woff2'),
+         url('../fonts/Raleway-Regular-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/Raleway-Regular-light-webfont.woff2') format('woff2'),
+         url('../fonts/Raleway-Regular-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaylight_italic';
+    src: url('../fonts/Raleway-Regular-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/Raleway-Regular-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('../fonts/Raleway-Regular-medium-webfont.woff2') format('woff2'),
+         url('../fonts/Raleway-Regular-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*#end section */  
+/*geral*/
+.ml-sub_titulo{
+    color:#000;
+    text-transform: uppercase;
+    font-family:Raleway-Regular;  
+}
+.titulo_bar{
+    width:100%;
+    height:2px;
+    background-color: #eeeeee;
+    display: inline-block; 
+    position: relative;
+    top: -15px;
+}
+.line{
+    width:7%;
+    height:2px;
+    background-color: #538167;
+    display: block;
+    position: relative;
+    top: 0;
+}
+
+.titulo_bar .line.center{
+    margin: 0 auto;
+}
+section{
+     margin-bottom:68px;
+}
+.borda{
+    border-bottom:2px solid #939393; 
+}
+/*end section*/
+/*header section */
+.ml-htext{
+    font-size:0.75rem;
+    color:#fff;
+    font-family:Raleway-Regular;
+}
+.ml-hbg{
+    background: #151515;
+    height:2.32rem;
+    line-height: 0.0625rem;
+}
+#pre_header a.icon-whatsapp:hover{
+   color:#34af23;
+}
+.ml-menu li a {
+    font-family:Raleway-Regular;
+    font-size:11px;
+    text-transform: uppercase;
+    font-weight:bold;
+    color:#000 !important;
+}
+.ml-borda{
+    text-decoration: none;
+    border-left:1px solid #bebebe;
+    display: inline-block;
+    padding:0.65rem;
+    width: 35px;
+    color:#fff;
+}
+.ml-borda-right{
+    border-right:1px solid #bebebe;
+}
+/*end section*/
+/* section horario*/
+.ml-dia {
+	flex: 1;
+	text-align: center;
+	font-family:Raleway-Regular-extrabold;
+	font-size:40px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-transform:;
+	line-height:30px;
+}
+.ml-hora{
+	flex:1;
+	text-align: center;
+	font-family:Raleway-Regular;
+	color: #FFFFFF;
+}
+.ml-dia ,.ml-hora{
+	margin-bottom:0px;
+}
+.ml-circulo{
+	background-color: #5b8068;
+	height:141px;
+	width: 141px;
+	padding:5px;
+}
+.centro{
+	margin:0px;
+}
+.ml-container{
+	flex-direction:column;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+}
+.ml-paralax{
+    background-image:url('/mloficial/assest/imagens/phora.png');
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    align-items: center;
+    display:flex;   
+    height:435px;    
+}
+/*end section*/
+
+
+
