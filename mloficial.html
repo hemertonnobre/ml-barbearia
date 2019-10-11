@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html>
 <head>
 
@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="assest/plugins/fontawesome/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="assest/stilo/styles.css">
 	<script type="text/javascript"src="assest/plugins/fontawesome/js/all.min.js"></script>
-
+	<script type="text/javascript" src="scrip.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -22,7 +22,7 @@
 	<header>
 		<div id= "pre_header" class="mb-2 ml-hbg" >
 			<div class="container">
-				<div class="row justify-content-around">
+				<div class="row justify-content-around ml-icon-pre_header">
 					<div>
 						<a class="ml-borda" href=""><i class="fa fa-mobile-alt"></i></a>
 						<span class="ml-htext">Faça um agendamento (19) 9 8760-9234</span>	
@@ -37,8 +37,8 @@
 					</div>
 					<div>
 						<a class="ml-borda icon-whatsapp" href=""><i class="fab fa-whatsapp"></i></a>
-						<a class="ml-borda" href=""><i class="fab fa-facebook"></i></a>
-						<a class="ml-borda ml-borda-right" href=""><i class="fab fa-instagram"></i></a>	
+						<a class="ml-borda icon-facebook" href=""><i class="fab fa-facebook"></i></a>
+						<a class="ml-borda icon-instagram ml-borda-right" href=""><i class="fab fa-instagram"></i></a>	
 					</div>
 				</div>
 			</div>
@@ -106,66 +106,40 @@
 						<div class="titulo_bar">
 							<span class="line"></span>	
 						</div>	
-				<div class="d-flex">
-					<div class="p-2">
-						<div>
-							<img src="assest/imagens/cabelo.png">
-						</div>
-						<div >
-							<img src="assest/imagens/luzes.png">	
-						</div>
-						<div >
-							<img src="assest/imagens/barba.png">	
-						</div>
-						<div >
-							<img src="assest/imagens/sobranselhas.png">	
-						</div>
-						<div >
-							<img src="assest/imagens/pezinho.png">	
-						</div>
+				<div>
+					<div class="d-flex borda-trasejada align-items-center">
+						<img src="assest/imagens/cabelo.png">
+						<p class="mb-0">corte de cabelo</p>
+						<span class="ml-auto estilo_valor">R$ 13,00</span> 
 					</div>
-					<div class=p-2>
-						<div>
-							<p>corte de cabelo</p>
-						</div>
-						<div >
-							<p>luzes</p>
-						</div>
-						<div >
-							<p>fazer a barba</p>
-						</div>
-						<div >
-							<p>sobrancelhas</p>
-						</div>
-						<div >
-							<p>pezinho</p>
-						</div>
+					<div class="d-flex borda-trasejada align-items-center">
+						<img src="assest/imagens/luzes.png">
+						<p class="mb-0">luzes</p>
+						<span class="ml-auto estilo_valor">R$ 20,00</span>
 					</div>
-					<div class="ml-auto p-2">
-						<div >
-							<p>$ 20,00</p>
-						</div>
-						<div >
-							<p>$ 13,00</p>
-						</div>
-						<div >
-							<p>$ 7,00</p>
-						</div>
-						<div>
-							<p>$ 5,00</p>
-						</div>
-						<div >
-							<p>$ 5,00</p>
-						</div>
+					<div class="d-flex borda-trasejada align-items-center" >
+						<img  src="assest/imagens/barba.png">
+						<p class="mb-0">fazer a barba</p>
+						<span class="ml-auto estilo_valor">R$ 7,00</span>					
 					</div>
-				</div>											 					
+					<div class="d-flex borda-trasejada align-items-center">
+						<img src="assest/imagens/sobranselhas.png">	
+						<p class="mb-0">sobrancelhas</p>
+						<span class="ml-auto estilo_valor">R$ 5,00</span>
+					</div>
+					<div class="d-flex borda-trasejada align-items-center">
+						<img src="assest/imagens/pezinho.png">
+						<p class="mb-0">pezinho</p>	
+						<span class="ml-auto estilo_valor">R$ 5,00</span>	
+					</div>
+				</div>										 					
 			</div>
 		</div>		
 	</div>	
 </section>
 <section>		
 	<div class="container "> 
-			<h2 class="ml-sub_titulo text-center" >nossos horários</h2>
+			<h2 class="ml_titulo text-center" >nossos horários</h2>
 			<div class="titulo_bar"> 
 				<span class="line center"></span>
 			</div>		
@@ -173,7 +147,7 @@
 	<div class="ml-paralax">
 		<div class="container" >
 			<div class="row justify-content-between">
-				<div class=" rounded-circle ml-circulo ml-container">
+				<div id="aura" class=" rounded-circle ml-circulo ml-container">
 					<div class="ml-centro">
 						<p class="ml-dia" >seg</p>
 						<p class="ml-hora"> 9:00h-18:00h</p>	
@@ -219,17 +193,173 @@
 		</div>
 	</div>
 </section>
+<section>
+	<div class="container">
+		<h2 class="ml_titulo text-center">Nossos serviços</h2>
+		<div class="titulo_bar"> 
+			<span class="line center"></span>
+		</div>
+		<div class="row">
+			<nav class="ml-menu-serv">
+				<ul>
+					<li>
+						<a class="estilo-classico" href="">
+						<label class="d-flex align-items-center " for="cabelo_classico">
+							estilo de cabelo classico 
+							<img class="ml-auto" src="assest/imagens/serviços/cabelo-classico.png">
+						</label>	
+						</a>
+					</li>
+					<li>
+						<a class="corte-barba" href="">
+						<label class="d-flex align-items-center" for="Estilizar_Barba">
+							estilizar de barba
+							<img class="ml-auto"  src="assest/imagens/serviços/estilizar-barba.png">
+						</label>	
+						</a>					
+					</li>
+					<li>
+						<a class="" href="">
+						<label class="d-flex align-items-center" for="Estilizar_Bigode">
+							estilizar de bigode
+							<img class="ml-auto"  src="assest/imagens/serviços/estilizar-bigode.png">
+						</label>	
+						</a>						
+					</li>
+					<li>
+						<a class="" href="">
+						<label class="d-flex align-items-center" for="Fazer_Barba">
+							fazer a barba
+							<img class="ml-auto"  src="assest/imagens/serviços/fazer-barba.png">
+						</label>	
+						</a>						
+					</li>
+					<li>
+						<a class="" href="">
+						<label class="d-flex align-items-center" for="Pintar_Cabelo">
+							pintar o cabelo
+							<img class="ml-auto"  src="assest/imagens/serviços/pintar-cabelo.png">
+						</label>	
+						</a>
+					</li>
+					<li>
+						<a class="" href="">
+						<label class="d-flex align-items-center" for="Uma_Aparada">
+							só uma aparada
+							<img class="ml-auto"  src="assest/imagens/serviços/uma-aparada.png">
+						</label>	
+						</a>					
+					</li>
+					<li>
+						<a class="" href="">
+						<label class="d-flex align-items-center" for="Corte_Elegante">
+							corte elegante
+							<img class="ml-auto"  src="assest/imagens/serviços/corte-elegante.png">
+						</label>	
+						</a>
+					</li>
+					<li>
+						<a class="" href="">
+						<label class="d-flex align-items-center" for="Tratamento_Completo">
+							tratamento completo
+							<img class="ml-auto" src="assest/imagens/serviços/tratamento-completo.png">
+						</label>	
+						</a>						
+					</li>
+				</ul>
+			</nav>
+			<div class="ml-servicos">
+				<div class="ml-4">
+					<input type="radio" name="servicos" id="cabelo_classico" checked>
+					<div class="conteudo">
+						<p>Os preços dos produtos, e serviços oferecidos podem variar de acordo com a ocasião, Para uma maior acertividade <br> ligue para a barbearia. Nos oferecemos os mais variados estilos de cortes de cabelo e modelagem de barba uma das <br> nossas especialidades é o <strong>Estilo de Cabelo Classico.</strong></p>
+						<h2 class="ml-sub_titulo">Estilo de Cabelo Classico</h2>
+						<img src="assest/imagens/img-01.png">
+						<img src="assest/imagens/img-02.png">
+					</div>
+				</div>
+				<div class="ml-4">
+					<input type="radio" name="servicos" id="Estilizar_Barba">
+					<div class="conteudo">
+						<p>Os preços dos produtos, e serviços oferecidos podem variar de acordo com a ocasião, Para uma maior acertividade <br> ligue para a barbearia. Nos oferecemos os mais variados estilos de cortes de cabelo e modelagem de barba uma das <br> nossas especialidades é o <strong>Estilizar Barba.</strong></p>
+						<h2 class="ml-sub_titulo">Estilizar Barba</h2>
+						<img src="assest/imagens/img-03.png">
+						<img src="assest/imagens/img-04.png">
+					</div>
+				</div>
+				<div class="ml-4">
+					<input type="radio" name="servicos" id="Estilizar_Bigode" >
+					<div class="conteudo">
+						<p>Os preços dos produtos, e serviços oferecidos podem variar de acordo com a ocasião, Para uma maior acertividade <br> ligue para a barbearia. Nos oferecemos os mais variados estilos de cortes de cabelo e modelagem de barba uma das <br> nossas especialidades é o <strong>Estilizar Bigode.</strong> </p>
+						<h2 class="ml-sub_titulo">Estilizar Bigode</h2>
+						<img src="assest/imagens/img-05.png">
+						<img src="assest/imagens/img-06.png">
+					</div>
+				</div>
+				<div class="ml-4">
+					<input type="radio" name="servicos" id="Fazer_Barba">
+					<div class="conteudo">
+						<p>Os preços dos produtos, e serviços oferecidos podem variar de acordo com a ocasião, Para uma maior acertividade <br> ligue para a barbearia. Nos oferecemos os mais variados estilos de cortes de cabelo e modelagem de barba uma das <br> nossas especialidades é o <strong>Fazer a Barba.</strong></p>
+						<h2 class="ml-sub_titulo">Fazer a Barba</h2>
+						<img src="assest/imagens/img-07.png">
+						<img src="assest/imagens/img-08.png">
+					</div>
+				</div>
+				<div class="ml-4">
+					<input type="radio" name="servicos" id="Pintar_Cabelo">
+					<div class="conteudo">
+						<p>Os preços dos produtos, e serviços oferecidos podem variar de acordo com a ocasião, Para uma maior acertividade <br> ligue para a barbearia. Nos oferecemos os mais variados estilos de cortes de cabelo e modelagem de barba uma das <br> nossas especialidades é o <strong> Pintar o Cabelo.</strong></p>
+						<h2 class="ml-sub_titulo">Pintar o Cabelo</h2>
+						<img src="assest/imagens/img-09.png">
+						<img src="assest/imagens/img-10.png">
+					</div>
+				</div>
+				<div class="ml-4">
+					<input type="radio" name="servicos" id="Uma_Aparada">
+					<div class="conteudo">
+						<p>Os preços dos produtos, e serviços oferecidos podem variar de acordo com a ocasião, Para uma maior acertividade <br> ligue para a barbearia. Nos oferecemos os mais variados estilos de cortes de cabelo e modelagem de barba uma das <br> nossas especialidades é o <strong>Só Uma Aparada.</strong></p>
+						<h2 class="ml-sub_titulo">Só Uma Aparada</h2>
+						<img src="assest/imagens/img-11.png">
+						<img src="assest/imagens/img-12.png">
+					</div>
+				</div>
+				<div class="ml-4">
+					<input type="radio" name="servicos" id="Corte_Elegante">
+					<div class="conteudo">
+						<p>Os preços dos produtos, e serviços oferecidos podem variar de acordo com a ocasião, Para uma maior acertividade <br> ligue para a barbearia. Nos oferecemos os mais variados estilos de cortes de cabelo e modelagem de barba uma das <br> nossas especialidades é o <strong>Corte Elegante.</strong></p>
+						<h2 class="ml-sub_titulo"> Corte Elegante</h2>
+						<img src="assest/imagens/img-13.png">
+						<img src="assest/imagens/img-14.png">
+					</div>
+				</div>
+				<div class="ml-4">
+					<input type="radio" name="servicos" id="Tratamento_Completo">
+					<div class="conteudo">
+						<p>Os preços dos produtos, e serviços oferecidos podem variar de acordo com a ocasião, Para uma maior acertividade <br> ligue para a barbearia. Nos oferecemos os mais variados estilos de cortes de cabelo e modelagem de barba uma das <br> nossas especialidades é o <strong>Tratamento Completo.</strong></p>
+						<h2 class="ml-sub_titulo">Tratamento completo</h2>
+						<img src="assest/imagens/img-15.png">
+						<img src="assest/imagens/img-16.png">
+					</div>
+				</div>				
+			</div>					
+		</div>
+	</div>		
+</section>
 <section class="galeria">
 	<div class="container">
-		<h2>Galeria de obras</h2>
+		<h2 class="ml_titulo text-center">Galeria de obras</h2>
+		<div class="titulo_bar"> 
+			<span class="line center"></span>
+		</div>
+		<p>Nossa Prioridade é um atendimento inpecavel. Por isso nós oferecemos o melhor serviço de barbear da cidade para que voçê fique sempre satisfeito a saia <br> com um grande sorriso e muito mais relachado de quando voçê chegou.Nesta galeria estão algumas de nossas mais valiosas obras prima.</p>
 		<div>
 			<div class="slider">
-				<div><img src=""></div>
-				<div><img src=""></div>
-				<div><img src=""></div>
-				<div><img src=""></div>
-				<div><img src=""></div>
-				<div><img src=""></div>
+				<div><img src="assest/imagens/galeria-img-.png"></div>
+				<div><img src="assest/imagens/galeria-img-.png"></div>
+				<div><img src="assest/imagens/galeria-img-.png"></div>
+				<div><img src="assest/imagens/galeria-img-.png"></div>
+				<div><img src="assest/imagens/galeria-img-.png"></div>
+				<div><img src="assest/imagens/galeria-img-.png"></div>
 			</div>
 			<div class="thumbnails">
 				<div><a href=""><img src=""></a></div>
@@ -242,5 +372,177 @@
 		</div>
 	</div>	
 </section>
+<section id="sobre_nos">
+	<div class="container">
+		<h2 class="ml_titulo text-center">Sobre Nos</h2>
+		<div class="titulo_bar"> 
+			<span class="line center"></span>
+		</div>
+		<p> Nos oferecemos vários modelos de corte de cabelo e barba. Isso só se tornou possivel graças ao nosso incansavel desejo de melhoria continua para <br>oferecer o melhor em um abiente elegante, moderno e maravilhoso.Aqui estão, os mais inportantes certificados e premios que adquirimos durante nossa jornada.</p>
+		<div class="row">
+			<div class="ml-folder d-flex justify-content-center flex-column col-3 ">
+				<div class="d-flex justify-content-center ml-imagen-folder">
+					<img src="assest/imagens/maicon-icon.png" alt="" class="rounded-circle" >
+				</div>
+				<div class=" text-center">
+					<p 	class="nome">Maicon Luiz</p>
+					<div class=" d-flex justify-content-center">
+						<img src="assest/imagens/linha-folder.png">
+					</div>
+					<p class="ml-texto">4 anos de experiência em <br>corte de cabelo voçê estará <br> em boas mãos!			
+					</p>
+						<p class="ml-texto">e-mail:<span> maiconl@gmail.com</span></p>
+				</div>
+				<div class="ml-icon d-flex align-items-center justify-content-center">
+					<a href="" class="rounded-circle icon-twitter"><i class="fab fa-twitter"></i></a>
+					<a href="" class="rounded-circle icon-facebook"><i class="fab fa-facebook"></i></a>
+					<a href="" class="rounded-circle icon-instagram"><i class="fab fa-instagram"></i></a>
+					<a href="" class="rounded-circle icon-whatsapp"><i class="fab fa-whatsapp"></i></a>	
+				</div>
+			</div>	
+			<div>
+				<h2 class="ml-sub_titulo">Certificados e Premíos</h2>
+				<div class="grupo_certificados"> 
+					<div class="certificado-1"><img src="assest/imagens/certificados/certificado-1.png"></div>
+					<div class="certificado-2"><img src="assest/imagens/certificados/certificado-2.png"></div>
+					<div class="certificado-3"><img src="assest/imagens/certificados/certificado-3.png"></div>
+					<div class="certificado-4"><img src="assest/imagens/certificados/certificado-4.png"></div>
+					<div class="certificado-5"><img src="assest/imagens/certificados/certificado-5.png"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="contato">
+	<div class="container">
+		<h2 class="ml_titulo text-center">Fale Conosco</h2>
+		<div class="titulo_bar"> 
+			<span class="line center"></span>
+		</div>	
+			<p>Seu contato é muito inportante para nós.Preencha os dados solicitados abaixo e nos envie uma mesangem, elogios ou sugestões. Disponibilizamos <br>atendimento por e-mail.telefone e em nossas redes sociais. Confira!</p>		
+	</div>
+	<div class="banner_formulario">
+		<div class="container">
+			<div class="col-6">
+				<form method="POST">
+					<div class="form-group">
+						<input type="text" class="form-control transparente text-dark " placeholder="Nome completo">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control transparente text-dark" placeholder="e-mail">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control transparente text-dark" placeholder="assunto">
+					</div>
+					<div class="form-group">
+					<textarea class="form-control transparente text-dark"  rows="4" placeholder="menssagem"></textarea>
+					</div>
+					<button type="submit" class="btn btn-dark ">Enviar</button>
+				</form>
+				<div class="row icon_geral ">
+					<div class="col ml-3">
+						<div class="row ">
+							<a href=""><i class="fas fa-mobile-alt"></i></a>
+							<p>(19) 9-8760-9900</p>
+						</div>
+						<div class="row ">
+							<a href=""><i class="fas fa-envelope"></i></a>
+							<p>mlbarbearia@gmail.com</p>
+						</div>
+					</div>
+					<div class="col ">
+						<div class="row">
+							<a href=""><i class="fab fa-instagram"></i></a>
+							<p>imstagram/mlbarbearia</p>
+						</div>
+						<div class="row">
+							<a href=""><i class="fab fa-facebook-f"></i></a>
+							<p>fecebook/mlbarbearia</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+</section>
+<section class="mb-0">
+	<div class="container">
+		<h2 class="ml_titulo text-center">Nossa Localização</h2>
+		<div class="titulo_bar"> 
+			<span class="line center"></span>
+		</div>	
+			<p>Estamos localizados proximo ao patio de hortolandia. Prontos a recebelos em um anbiente agradavel, em nosso bar temos salgados, cerveja bem gelada,para que relachar emquanto aguarda seu corte. Venha nos visatar estamos esperando por voçê!</p>		
+	</div>
+	<div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.503017145011!2d-47.20691308463527!3d-22.85786948503666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8beadf6a16065%3A0x35006c1b620c5048!2sBarbearia+ML!5e0!3m2!1spt-BR!2sbr!4v1545573897974" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+</section>
+<footer>
+	<div class="fundo_area1">
+		<div class="container">
+			<div class="pre_footer_area row justify-content-between">
+				<div class="col pl-0 pr-0">
+					<h3>Fecebook</h3>
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBarbeariaML%2F&tabs=timeline&width=285&height=250&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="285" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+				</div>
+				<div class="col pl-0 pr-0">
+					<h3 class="ml-3">Instagram</h3>  
+					<div class="row d-flex justify-content-center">
+						<div><img src="assest/imagens/estilo-1.png" class="imagens_insta"></div>
+						<div><img src="assest/imagens/estilo-2.png" class="imagens_insta"></div>
+						<div><img src="assest/imagens/estilo-3.png" class="imagens_insta"></div>
+					</div>
+					<div class="row d-flex justify-content-center">
+						<div><img src="assest/imagens/estilo-4.png" class="imagens_insta"></div>
+						<div><img src="assest/imagens/estilo-5.png" class="imagens_insta"></div>
+						<div><img src="assest/imagens/estilo-6.png" class="imagens_insta"></div>
+					</div>
+				</div>
+				<div class="col pl-0 pr-0">
+					<div>
+						<h3>Sobre Nos</h3>
+						<p>Ml Barbearia é uma barbearia <br> de desing focada em otimizar <br> sua experiencia durante <br> o tratamento</p>
+					</div>
+					<div class="icon_geral">
+						<div class="row ">
+							<a href=""><i class="fas fa-mobile-alt"></i></a>
+							<p>(19) 9-8760-9900</p>
+						</div>
+						<div class="row ">
+							<a href=""><i class="fas fa-envelope"></i></a>
+							<p>mlbarbearia@gmail.com</p>
+						</div>
+						<div class="row ">
+							<a href=""><i class="fas fa-home"></i></a>
+							<p>www.mlbarbearia.com.br</p>
+						</div>
+					</div>	
+				</div>
+				<div class="col pl-0 pr-0">
+					<h3>Horarios</h3>
+					<div class="horarios ">
+						<div class="row linha"><p class="dias">Segunda-feira</p><p class="horas ml-auto">08:00 18:00</p></div>
+						<div class="row linha"><p class="dias">Terça-feira</p>  <p class="horas ml-auto">08:00 18:00</p></div>
+						<div class="row linha"><p class="dias">Quarta-feira</p> <p class="horas ml-auto">08:00 18:00</p></div>
+						<div class="row linha"><p class="dias">Quinta-feira</p> <p class="horas ml-auto">08:00 18:00</p></div>
+						<div class="row linha"><p class="dias">Sexta-feira</p>  <p class="horas ml-auto">08:00 18:00</p></div>
+						<div class="row linha"><p class="dias">Sabado</p>       <p class="horas ml-auto">08:00 18:00</p></div>
+						<div class="row linha"><p class="dias">Domingo</p>      <p class="horas ml-auto">08:00 12:00</p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="fundo_area2">
+		<div class="container area_footer">
+			<div class="row d-flex justify-content-center ">
+				<p class="area_texto_footer">Venha visitar nossa <span><i class="fas fa-angle-double-down fa-2x"></i></span> Barbearia </p>
+			</div>
+			<div class="row d-flex justify-content-center">
+				<p class="copyrait"> © ML barbearia@2019 by <span>Hemerton Nobre Developer</span></p>	
+			</div>	
+		</div>
+	</div>
+</footer>
 </body>
 </html>
