@@ -210,18 +210,32 @@ section{
 }
 .ml-hora{
 	flex:1;
-	text-align: center;
+    text-align: center;
+    margin-top: 5px;
 	font-family:Raleway-Regular;
 	color: #FFFFFF;
 }
 .ml-dia ,.ml-hora{
 	margin-bottom:0px;
 }
-.ml-circulo{
-	background-color: #5b8068;
-	height:141px;
-	width: 141px;
-	padding:5px;
+.ml-circulo {
+    background-color: #5b8068;
+    height: 141px;
+    width: 141px;
+    padding: 5px;
+    margin: 5px;
+}
+.ml-circulo:hover {
+    background: #497167;
+     height: 151px;
+     width: 151px;
+     margin: 0;
+ }
+ .ml-circulo:hover .ml-dia {
+    font-size: 45px;
+}
+.ml-circulo:hover .ml-hora {
+    font-size: 1.1rem;
 }
 .centro{
 	margin:0px;
@@ -364,6 +378,9 @@ section{
     align-items: center;
     display:flex;   
     height:520px;    
+}
+.transparente {
+    opacity: 0.8;
 }
 /*end section*/
 /* section footer*/
